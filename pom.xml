@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.paipianwang.pat</groupId>
@@ -20,16 +19,19 @@
 		<!-- common -->
 		<pat-common.version>1.0-SNAPSHOT</pat-common.version>
 		<pat-common-config.version>1.0-SNAPSHOT</pat-common-config.version>
+		<pat-common-core.version>1.0-SNAPSHOT</pat-common-core.version>
 
 		<!-- facade -->
 		<pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version>
 		<pat-facade-fastdfs.version>1.0-SNAPSHOT</pat-facade-fastdfs.version>
 		<pat-facade-product.version>1.0-SNAPSHOT</pat-facade-product.version>
+		<pat-facade-customer.version>1.0-SNAPSHOT</pat-facade-customer.version>
 
 		<!-- service -->
 		<pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version>
 		<pat-service-fastdfs.version>1.0-SNAPSHOT</pat-service-fastdfs.version>
 		<pat-service-product.version>1.0-SNAPSHOT</pat-service-product.version>
+		<pat-service-customer.version>1.0-SNAPSHOT</pat-service-customer.version>
 
 		<!-- web -->
 		<pat-web-boss>1.0-SNAPSHOT</pat-web-boss>
@@ -155,6 +157,11 @@
 				<version>1.10</version>
 			</dependency>
 			<dependency>
+				<groupId>oro</groupId>
+				<artifactId>oro</artifactId>
+				<version>2.0.8</version>
+			</dependency>
+			<dependency>
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
 				<version>1.2.17</version>
@@ -178,6 +185,11 @@
 				<groupId>cglib</groupId>
 				<artifactId>cglib</artifactId>
 				<version>2.2.2</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.transaction</groupId>
+				<artifactId>jta</artifactId>
+				<version>1.1</version>
 			</dependency>
 			<!-- Common Dependency End -->
 
@@ -266,6 +278,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
+				<artifactId>spring-oxm</artifactId>
+				<version>${org.springframework.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
 				<artifactId>spring-core</artifactId>
 				<version>${org.springframework.version}</version>
 			</dependency>
@@ -305,12 +322,12 @@
 			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis</artifactId>
-				<version>3.4.1</version>
+				<version>3.2.2</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis-spring</artifactId>
-				<version>1.3.0</version>
+				<version>1.2.0</version>
 			</dependency>
 			<!-- MyBatis Dependency End -->
 
@@ -436,5 +453,8 @@
 		<module>pat-common</module>
 		<module>pat-common-config</module>
 		<module>pat-web-boss</module>
+		<module>pat-common-core</module>
+    <module>pat-facade-customer</module>
+    <module>pat-service-customer</module>
 	</modules>
 </project>
