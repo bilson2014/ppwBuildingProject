@@ -22,19 +22,19 @@
 		<pat-common-core.version>1.0-SNAPSHOT</pat-common-core.version>
 
 		<!-- facade -->
-		<pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version>
-		<pat-facade-fastdfs.version>1.0-SNAPSHOT</pat-facade-fastdfs.version>
+		<pat-facade-indent.version>1.0-SNAPSHOT</pat-facade-indent.version>
+		<!-- <pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version>
 		<pat-facade-product.version>1.0-SNAPSHOT</pat-facade-product.version>
-		<pat-facade-customer.version>1.0-SNAPSHOT</pat-facade-customer.version>
-
+		<pat-facade-customer.version>1.0-SNAPSHOT</pat-facade-customer.version> -->
+		
 		<!-- service -->
-		<pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version>
-		<pat-service-fastdfs.version>1.0-SNAPSHOT</pat-service-fastdfs.version>
+		<pat-service-indent.version>1.0-SNAPSHOT</pat-service-indent.version>
+		<!-- <pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version>
 		<pat-service-product.version>1.0-SNAPSHOT</pat-service-product.version>
-		<pat-service-customer.version>1.0-SNAPSHOT</pat-service-customer.version>
+		<pat-service-customer.version>1.0-SNAPSHOT</pat-service-customer.version> -->
 
 		<!-- web -->
-		<pat-web-boss>1.0-SNAPSHOT</pat-web-boss>
+		<!-- <pat-web-boss>1.0-SNAPSHOT</pat-web-boss> -->
 	</properties>
 
 	<distributionManagement>
@@ -396,6 +396,11 @@
 				<version>0.9</version>
 			</dependency>
 			<!-- Zookeeper relation jar end -->
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>2.6.1</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -444,17 +449,17 @@
 		</plugins>
 	</build>
 	<modules>
-		<module>pat-facade-video</module>
-		<module>pat-service-video</module>
-		<module>pat-facade-fastdfs</module>
-		<module>pat-service-fastdfs</module>
-		<module>pat-facade-product</module>
-		<module>pat-service-product</module>
-		<module>pat-common</module>
-		<module>pat-common-config</module>
-		<module>pat-web-boss</module>
-		<module>pat-common-core</module>
-    <module>pat-facade-customer</module>
-    <module>pat-service-customer</module>
+		<!-- <module>../pat-facade-video</module>
+		<module>../pat-service-video</module>
+		<module>../pat-facade-product</module>
+		<module>../pat-service-product</module> -->
+		<module>../pat-common</module>
+		<module>../pat-common-config</module>
+		<module>../pat-common-core</module>
+		<!-- <module>../pat-facade-indent</module>
+		<module>../pat-service-indent</module>  -->
+		<!-- <module>../pat-web-boss</module>
+    <module>../pat-facade-customer</module>
+    <module>../pat-service-customer</module> -->
 	</modules>
 </project>
