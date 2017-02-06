@@ -23,14 +23,18 @@
 
 		<!-- facade -->
 		<pat-facade-indent.version>1.0-SNAPSHOT</pat-facade-indent.version>
-		<!-- <pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version>
+		<pat-facade-team.version>1.0-SNAPSHOT</pat-facade-team.version>
 		<pat-facade-product.version>1.0-SNAPSHOT</pat-facade-product.version>
-		<pat-facade-customer.version>1.0-SNAPSHOT</pat-facade-customer.version> -->
+		<!-- <pat-facade-message.version>1.0-SNAPSHOT</pat-facade-message.version> -->
+		<!-- <pat-facade-customer.version>1.0-SNAPSHOT</pat-facade-customer.version>
+		<pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version> -->
 		
 		<!-- service -->
 		<pat-service-indent.version>1.0-SNAPSHOT</pat-service-indent.version>
-		<!-- <pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version>
+		<pat-service-team.version>1.0-SNAPSHOT</pat-service-team.version>
 		<pat-service-product.version>1.0-SNAPSHOT</pat-service-product.version>
+		<!-- <pat-service-message.version>1.0-SNAPSHOT</pat-service-message.version> -->
+		<!-- <pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version>
 		<pat-service-customer.version>1.0-SNAPSHOT</pat-service-customer.version> -->
 
 		<!-- web -->
@@ -53,6 +57,11 @@
 	<dependencyManagement>
 		<dependencies>
 			<!-- Common Dependency Begin -->
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>3.1.0</version>
+			</dependency>
 			<dependency>
 				<groupId>xalan</groupId>
 				<artifactId>xalan</artifactId>
@@ -401,6 +410,23 @@
 				<artifactId>gson</artifactId>
 				<version>2.6.1</version>
 			</dependency>
+			<dependency>
+			    <groupId>joda-time</groupId>
+			    <artifactId>joda-time</artifactId>
+			    <version>2.3</version>
+			</dependency>
+		<!--mq begin -->	
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-client</artifactId>
+			<version>5.14.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-pool</artifactId>
+			<version>5.14.1</version>
+		</dependency>
+		<!--mq  end-->	
 		</dependencies>
 	</dependencyManagement>
 
@@ -449,17 +475,21 @@
 		</plugins>
 	</build>
 	<modules>
-		<!-- <module>../pat-facade-video</module>
-		<module>../pat-service-video</module>
-		<module>../pat-facade-product</module>
-		<module>../pat-service-product</module> -->
-		<module>../pat-common</module>
+		
 		<module>../pat-common-config</module>
 		<module>../pat-common-core</module>
-		<!-- <module>../pat-facade-indent</module>
-		<module>../pat-service-indent</module>  -->
+		<module>../pat-service-indent</module>
+		<module>../pat-facade-indent</module>
+		<module>../pat-facade-team</module>
+		<module>../pat-service-team</module>
+		<module>../pat-facade-product</module>
+		<module>../pat-service-product</module>
+<!-- 		<module>../pat-facade-video</module>
+		<module>../pat-service-video</module> -->
 		<!-- <module>../pat-web-boss</module>
     <module>../pat-facade-customer</module>
     <module>../pat-service-customer</module> -->
+		<!-- <module>../pat-facade-message</module>
+		<module>../pat-service-message</module> -->
 	</modules>
 </project>
