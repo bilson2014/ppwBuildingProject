@@ -25,6 +25,7 @@
 		<pat-facade-indent.version>1.0-SNAPSHOT</pat-facade-indent.version>
 		<pat-facade-team.version>1.0-SNAPSHOT</pat-facade-team.version>
 		<pat-facade-product.version>1.0-SNAPSHOT</pat-facade-product.version>
+		<pat-facade-user.version>1.0-SNAPSHOT</pat-facade-user.version>
 		<!-- <pat-facade-message.version>1.0-SNAPSHOT</pat-facade-message.version> -->
 		<!-- <pat-facade-customer.version>1.0-SNAPSHOT</pat-facade-customer.version>
 		<pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version> -->
@@ -33,6 +34,8 @@
 		<pat-service-indent.version>1.0-SNAPSHOT</pat-service-indent.version>
 		<pat-service-team.version>1.0-SNAPSHOT</pat-service-team.version>
 		<pat-service-product.version>1.0-SNAPSHOT</pat-service-product.version>
+		<pat-service-user.version>1.0-SNAPSHOT</pat-service-user.version>
+		
 		<!-- <pat-service-message.version>1.0-SNAPSHOT</pat-service-message.version> -->
 		<!-- <pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version>
 		<pat-service-customer.version>1.0-SNAPSHOT</pat-service-customer.version> -->
