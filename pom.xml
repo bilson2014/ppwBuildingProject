@@ -487,6 +487,9 @@
 		<module>../pat-service-team</module>
 		<module>../pat-facade-product</module>
 		<module>../pat-service-product</module>
+		<module>../pat-facade-user</module>
+		<module>../pat-service-user</module>
+		
 <!-- 		<module>../pat-facade-video</module>
 		<module>../pat-service-video</module> -->
 		<!-- <module>../pat-web-boss</module>
