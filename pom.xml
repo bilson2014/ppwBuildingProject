@@ -26,19 +26,23 @@
 		<pat-facade-team.version>1.0-SNAPSHOT</pat-facade-team.version>
 		<pat-facade-product.version>1.0-SNAPSHOT</pat-facade-product.version>
 		<pat-facade-user.version>1.0-SNAPSHOT</pat-facade-user.version>
+		<pat-facade-finance.version>1.0-SNAPSHOT</pat-facade-finance.version>
+		<pat-facade-sales.version>1.0-SNAPSHOT</pat-facade-sales.version>
+		<pat-facade-employee.version>1.0-SNAPSHOT</pat-facade-employee.version>
 		<!-- <pat-facade-message.version>1.0-SNAPSHOT</pat-facade-message.version> -->
-		<!-- <pat-facade-customer.version>1.0-SNAPSHOT</pat-facade-customer.version>
-		<pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version> -->
+		<!--<pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version> -->
 		
 		<!-- service -->
 		<pat-service-indent.version>1.0-SNAPSHOT</pat-service-indent.version>
 		<pat-service-team.version>1.0-SNAPSHOT</pat-service-team.version>
 		<pat-service-product.version>1.0-SNAPSHOT</pat-service-product.version>
 		<pat-service-user.version>1.0-SNAPSHOT</pat-service-user.version>
+		<pat-service-finance.version>1.0-SNAPSHOT</pat-service-finance.version>
+		<pat-service-sales.version>1.0-SNAPSHOT</pat-service-sales.version>
+		<pat-service-employee.version>1.0-SNAPSHOT</pat-service-employee.version>
 		
 		<!-- <pat-service-message.version>1.0-SNAPSHOT</pat-service-message.version> -->
-		<!-- <pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version>
-		<pat-service-customer.version>1.0-SNAPSHOT</pat-service-customer.version> -->
+		<!-- <pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version> -->
 
 		<!-- web -->
 		<!-- <pat-web-boss>1.0-SNAPSHOT</pat-web-boss> -->
@@ -489,6 +493,12 @@
 		<module>../pat-service-product</module>
 		<module>../pat-facade-user</module>
 		<module>../pat-service-user</module>
+		<module>../pat-facade-finance</module>
+		<module>../pat-service-finance</module>
+		<module>../pat-facade-sales</module>
+		<module>../pat-service-sales</module>
+		<module>../pat-facade-employee</module>
+		<module>../pat-service-employee</module>
 		
 <!-- 		<module>../pat-facade-video</module>
 		<module>../pat-service-video</module> -->
