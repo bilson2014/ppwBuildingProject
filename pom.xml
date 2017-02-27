@@ -29,6 +29,7 @@
 		<pat-facade-finance.version>1.0-SNAPSHOT</pat-facade-finance.version>
 		<pat-facade-sales.version>1.0-SNAPSHOT</pat-facade-sales.version>
 		<pat-facade-employee.version>1.0-SNAPSHOT</pat-facade-employee.version>
+		<pat-facade-right.version>1.0-SNAPSHOT</pat-facade-right.version>
 		<!-- <pat-facade-message.version>1.0-SNAPSHOT</pat-facade-message.version> -->
 		<!--<pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version> -->
 		
@@ -40,6 +41,7 @@
 		<pat-service-finance.version>1.0-SNAPSHOT</pat-service-finance.version>
 		<pat-service-sales.version>1.0-SNAPSHOT</pat-service-sales.version>
 		<pat-service-employee.version>1.0-SNAPSHOT</pat-service-employee.version>
+		<pat-service-right.version>1.0-SNAPSHOT</pat-service-right.version>
 		
 		<!-- <pat-service-message.version>1.0-SNAPSHOT</pat-service-message.version> -->
 		<!-- <pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version> -->
@@ -497,8 +499,8 @@
 		<module>../pat-service-finance</module>
 		<module>../pat-facade-sales</module>
 		<module>../pat-service-sales</module>
-		<module>../pat-facade-employee</module>
-		<module>../pat-service-employee</module>
+		<!-- <module>../pat-facade-employee</module>
+		<module>../pat-service-employee</module> -->
 		
 <!-- 		<module>../pat-facade-video</module>
 		<module>../pat-service-video</module> -->
