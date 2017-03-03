@@ -499,6 +499,8 @@
 		<module>../pat-service-finance</module>
 		<module>../pat-facade-sales</module>
 		<module>../pat-service-sales</module>
+		<module>../pat-facade-right</module>
+		<module>../pat-service-right</module>
 		<!-- <module>../pat-facade-employee</module>
 		<module>../pat-service-employee</module> -->
 		
