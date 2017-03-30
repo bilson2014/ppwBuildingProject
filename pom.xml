@@ -20,6 +20,7 @@
 		<pat-common.version>1.0-SNAPSHOT</pat-common.version>
 		<pat-common-config.version>1.0-SNAPSHOT</pat-common-config.version>
 		<pat-common-core.version>1.0-SNAPSHOT</pat-common-core.version>
+		<pat-common-web.version>1.0-SNAPSHOT</pat-common-web.version>
 
 		<!-- facade -->
 		<pat-facade-indent.version>1.0-SNAPSHOT</pat-facade-indent.version>
@@ -501,8 +502,9 @@
 		<module>../pat-service-sales</module>
 		<module>../pat-facade-right</module>
 		<module>../pat-service-right</module>
-		<!-- <module>../pat-facade-employee</module>
-		<module>../pat-service-employee</module> -->
+		<module>../pat-common-web</module>
+		<module>../pat-facade-employee</module>
+		<module>../pat-service-employee</module>
 		
 <!-- 		<module>../pat-facade-video</module>
 		<module>../pat-service-video</module> -->
@@ -511,5 +513,5 @@
     <module>../pat-service-customer</module> -->
 		<!-- <module>../pat-facade-message</module>
 		<module>../pat-service-message</module> -->
-	</modules>
+  </modules>
 </project>
