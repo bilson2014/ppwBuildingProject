@@ -31,6 +31,7 @@
 		<pat-facade-sales.version>1.0-SNAPSHOT</pat-facade-sales.version>
 		<pat-facade-employee.version>1.0-SNAPSHOT</pat-facade-employee.version>
 		<pat-facade-right.version>1.0-SNAPSHOT</pat-facade-right.version>
+		<pat-facade-information.version>1.0-SNAPSHOT</pat-facade-information.version>
 		<!-- <pat-facade-message.version>1.0-SNAPSHOT</pat-facade-message.version> -->
 		<!--<pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version> -->
 		
@@ -43,6 +44,7 @@
 		<pat-service-sales.version>1.0-SNAPSHOT</pat-service-sales.version>
 		<pat-service-employee.version>1.0-SNAPSHOT</pat-service-employee.version>
 		<pat-service-right.version>1.0-SNAPSHOT</pat-service-right.version>
+		<pat-service-information.version>1.0-SNAPSHOT</pat-service-information.version>
 		
 		<!-- <pat-service-message.version>1.0-SNAPSHOT</pat-service-message.version> -->
 		<!-- <pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version> -->
@@ -420,11 +422,6 @@
 				<artifactId>gson</artifactId>
 				<version>2.6.1</version>
 			</dependency>
-			<dependency>
-			    <groupId>joda-time</groupId>
-			    <artifactId>joda-time</artifactId>
-			    <version>2.3</version>
-			</dependency>
 		<!--mq begin -->	
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
@@ -505,6 +502,8 @@
 		<module>../pat-common-web</module>
 		<module>../pat-facade-employee</module>
 		<module>../pat-service-employee</module>
+		<module>../pat-facade-information</module>
+		<module>../pat-service-information</module>
 		
 <!-- 		<module>../pat-facade-video</module>
 		<module>../pat-service-video</module> -->
