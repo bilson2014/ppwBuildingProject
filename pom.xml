@@ -33,8 +33,6 @@
 		<pat-facade-employee.version>1.0-SNAPSHOT</pat-facade-employee.version>
 		<pat-facade-right.version>1.0-SNAPSHOT</pat-facade-right.version>
 		<pat-facade-information.version>1.0-SNAPSHOT</pat-facade-information.version>
-		<!-- <pat-facade-message.version>1.0-SNAPSHOT</pat-facade-message.version> -->
-		<!--<pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version> -->
 
 		<!-- service -->
 		<pat-service-indent.version>1.0-SNAPSHOT</pat-service-indent.version>
@@ -47,9 +45,6 @@
 		<pat-service-right.version>1.0-SNAPSHOT</pat-service-right.version>
 		<pat-service-information.version>1.0-SNAPSHOT</pat-service-information.version>
 
-		<!-- <pat-service-message.version>1.0-SNAPSHOT</pat-service-message.version> -->
-		<!-- <pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version> -->
-
 		<!-- web -->
 		<!-- <pat-web-boss>1.0-SNAPSHOT</pat-web-boss> -->
 	</properties>
@@ -58,12 +53,12 @@
 		<repository>
 			<id>releases</id>
 			<name>Nexus Release Repository</name>
-			<url>http://106.75.4.197:8081/nexus/content/repositories/releases/</url>
+			<url>http://106.75.62.39:9081/nexus/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>Nexus Snapshot Repository</name>
-			<url>http://106.75.4.197:8081/nexus/content/repositories/snapshots/</url>
+			<url>http://106.75.62.39:9081/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -491,9 +486,9 @@
 		</plugins>
 	</build>
 	<modules>
-
 		<module>../pat-common-config</module>
 		<module>../pat-common-core</module>
+		<module>../pat-common-web</module>
 		<module>../pat-service-indent</module>
 		<module>../pat-facade-indent</module>
 		<module>../pat-facade-team</module>
@@ -508,15 +503,9 @@
 		<module>../pat-service-sales</module>
 		<module>../pat-facade-right</module>
 		<module>../pat-service-right</module>
-		<module>../pat-common-web</module>
 		<module>../pat-facade-employee</module>
 		<module>../pat-service-employee</module>
 		<module>../pat-facade-information</module>
 		<module>../pat-service-information</module>
-
-		<!-- <module>../pat-facade-video</module> <module>../pat-service-video</module> -->
-		<!-- <module>../pat-web-boss</module> <module>../pat-facade-customer</module> 
-			<module>../pat-service-customer</module> -->
-		<!-- <module>../pat-facade-message</module> <module>../pat-service-message</module> -->
 	</modules>
 </project>
