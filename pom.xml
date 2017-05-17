@@ -21,6 +21,7 @@
 		<pat-common.version>1.0-SNAPSHOT</pat-common.version>
 		<pat-common-config.version>1.0-SNAPSHOT</pat-common-config.version>
 		<pat-common-core.version>1.0-SNAPSHOT</pat-common-core.version>
+		<pat-common-cache.version>2.0-SNAPSHOT</pat-common-cache.version>
 		<pat-common-web.version>1.0-SNAPSHOT</pat-common-web.version>
 
 		<!-- facade -->
@@ -45,8 +46,6 @@
 		<pat-service-right.version>1.0-SNAPSHOT</pat-service-right.version>
 		<pat-service-information.version>1.0-SNAPSHOT</pat-service-information.version>
 
-		<!-- web -->
-		<!-- <pat-web-boss>1.0-SNAPSHOT</pat-web-boss> -->
 	</properties>
 
 	<distributionManagement>
@@ -129,7 +128,12 @@
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-databind</artifactId>
-				<version>2.7.1-1</version>
+				<version>2.8.7</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-annotations</artifactId>
+				<version>2.8.7</version>
 			</dependency>
 			<dependency>
 				<groupId>junit</groupId>
@@ -242,6 +246,16 @@
 				<artifactId>jedis</artifactId>
 				<version>2.9.0</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-redis</artifactId>
+				<version>1.8.3.RELEASE</version>
+			</dependency>
+			<!-- <dependency>
+				<groupId>com.paipianwang.spring-redis-data</groupId>
+				<artifactId>spring-redis-data-master</artifactId>
+				<version>1.0</version>
+			</dependency> -->
 			<!-- Redis Dependence End -->
 
 			<!-- Fmmpge Dependence Begin -->
@@ -488,6 +502,7 @@
 	<modules>
 		<module>../pat-common-config</module>
 		<module>../pat-common-core</module>
+		<module>../pat-common-cache</module>
 		<module>../pat-common-web</module>
 		<module>../pat-service-indent</module>
 		<module>../pat-facade-indent</module>
