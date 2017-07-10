@@ -34,6 +34,7 @@
 		<pat-facade-employee.version>1.0-SNAPSHOT</pat-facade-employee.version>
 		<pat-facade-right.version>1.0-SNAPSHOT</pat-facade-right.version>
 		<pat-facade-information.version>1.0-SNAPSHOT</pat-facade-information.version>
+		<pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version>
 
 		<!-- service -->
 		<pat-service-indent.version>1.0-SNAPSHOT</pat-service-indent.version>
@@ -45,6 +46,7 @@
 		<pat-service-employee.version>1.0-SNAPSHOT</pat-service-employee.version>
 		<pat-service-right.version>1.0-SNAPSHOT</pat-service-right.version>
 		<pat-service-information.version>1.0-SNAPSHOT</pat-service-information.version>
+		<pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version>
 
 	</properties>
 
@@ -548,7 +550,7 @@
 			</plugin>
 		</plugins>
 	</build>
-	<modules>
+	<modules> 
 		<module>../pat-common-config</module>
 		<module>../pat-common-core</module>
 		<module>../pat-common-cache</module>
@@ -571,5 +573,7 @@
 		<module>../pat-service-employee</module>
 		<module>../pat-facade-information</module>
 		<module>../pat-service-information</module>
+		<module>../pat-facade-video</module>
+		<module>../pat-service-video</module>
 	</modules>
 </project>
