@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
+	
 	<groupId>com.paipianwang.pat</groupId>
 	<artifactId>pat-common-parent</artifactId>
 	<version>1.0-SNAPSHOT</version>
@@ -15,8 +15,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<!-- frameworks -->
-		<org.springframework.version>4.3.4.RELEASE</org.springframework.version>
-
+		<org.springframework.version>4.3.9.RELEASE</org.springframework.version>
+		<!-- activiti -->
+		<activiti-version>5.22.0</activiti-version>
 		<!-- common -->
 		<pat-common.version>1.0-SNAPSHOT</pat-common.version>
 		<pat-common-config.version>1.0-SNAPSHOT</pat-common-config.version>
@@ -35,6 +36,7 @@
 		<pat-facade-right.version>1.0-SNAPSHOT</pat-facade-right.version>
 		<pat-facade-information.version>1.0-SNAPSHOT</pat-facade-information.version>
 		<pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version>
+		<pat-facade-workflow.version>1.0-SNAPSHOT</pat-facade-workflow.version>
 
 		<!-- service -->
 		<pat-service-indent.version>1.0-SNAPSHOT</pat-service-indent.version>
@@ -47,6 +49,7 @@
 		<pat-service-right.version>1.0-SNAPSHOT</pat-service-right.version>
 		<pat-service-information.version>1.0-SNAPSHOT</pat-service-information.version>
 		<pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version>
+		<pat-service-workflow.version>1.0-SNAPSHOT</pat-service-workflow.version>
 
 	</properties>
 
@@ -194,11 +197,8 @@
 				<artifactId>slf4j-api</artifactId>
 				<version>1.7.5</version>
 			</dependency>
-		<!-- 	<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-log4j12</artifactId>
-				<version>1.7.5</version>
-			</dependency> -->
+			<!-- <dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-log4j12</artifactId> 
+				<version>1.7.5</version> </dependency> -->
 			<dependency>
 				<groupId>commons-lang</groupId>
 				<artifactId>commons-lang</artifactId>
@@ -228,7 +228,7 @@
 			<dependency>
 				<groupId>com.alibaba</groupId>
 				<artifactId>druid</artifactId>
-				<version>0.2.23</version>
+				<version>1.1.0</version>
 			</dependency>
 			<dependency>
 				<groupId>google.code</groupId>
@@ -253,11 +253,9 @@
 				<artifactId>spring-data-redis</artifactId>
 				<version>1.8.3.RELEASE</version>
 			</dependency>
-			<!-- <dependency>
-				<groupId>com.paipianwang.spring-redis-data</groupId>
-				<artifactId>spring-redis-data-master</artifactId>
-				<version>1.0</version>
-			</dependency> -->
+			<!-- <dependency> <groupId>com.paipianwang.spring-redis-data</groupId> 
+				<artifactId>spring-redis-data-master</artifactId> <version>1.0</version> 
+				</dependency> -->
 			<!-- Redis Dependence End -->
 
 			<!-- Fmmpge Dependence Begin -->
@@ -275,7 +273,7 @@
 				<version>3.0</version>
 			</dependency>
 			<!-- FastDFS Dependence End -->
-			
+
 			<!-- open office start -->
 			<dependency>
 				<groupId>org.libreoffice</groupId>
@@ -302,7 +300,7 @@
 				<artifactId>commons-cli</artifactId>
 				<version>1.3.1</version>
 			</dependency>
-	
+
 			<dependency>
 				<groupId>org.artofsolving</groupId>
 				<artifactId>jodconverter</artifactId>
@@ -383,6 +381,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
+				<artifactId>spring-beans</artifactId>
+				<version>${org.springframework.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
 				<artifactId>spring-jms</artifactId>
 				<version>${org.springframework.version}</version>
 			</dependency>
@@ -401,18 +404,23 @@
 				<artifactId>spring-webmvc-portlet</artifactId>
 				<version>${org.springframework.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-instrument</artifactId>
+				<version>${org.springframework.version}</version>
+			</dependency>
 			<!-- Spring Dependence Begin -->
 
 			<!-- MyBatis Dependency Begin -->
 			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis</artifactId>
-				<version>3.2.2</version>
+				<version>3.4.1</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis-spring</artifactId>
-				<version>1.2.0</version>
+				<version>1.3.1</version>
 			</dependency>
 			<!-- MyBatis Dependency End -->
 
@@ -420,7 +428,7 @@
 			<dependency>
 				<groupId>mysql</groupId>
 				<artifactId>mysql-connector-java</artifactId>
-				<version>5.1.32</version>
+				<version>5.1.42</version>
 			</dependency>
 			<!-- Mysql Driver End -->
 
@@ -473,6 +481,34 @@
 				<version>2.5.2</version>
 			</dependency>
 			<!-- dubbo relation jar end -->
+
+			<!-- Activiti relation jar start -->
+			<dependency>
+				<groupId>org.activiti</groupId>
+				<artifactId>activiti-engine</artifactId>
+				<version>${activiti-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.activiti</groupId>
+				<artifactId>activiti-spring</artifactId>
+				<version>${activiti-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.activiti</groupId>
+				<artifactId>activiti-bpmn-layout</artifactId>
+				<version>${activiti-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.activiti</groupId>
+				<artifactId>activiti-bpmn-converter</artifactId>
+				<version>${activiti-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.activiti</groupId>
+				<artifactId>activiti-bpmn-model</artifactId>
+				<version>${activiti-version}</version>
+			</dependency>
+			<!-- Activiti relation jar end -->
 
 			<!-- Zookeeper relation jar start -->
 			<dependency>
@@ -550,7 +586,7 @@
 			</plugin>
 		</plugins>
 	</build>
-	<modules> 
+	<modules>
 		<module>../pat-common-config</module>
 		<module>../pat-common-core</module>
 		<module>../pat-common-cache</module>
@@ -575,5 +611,7 @@
 		<module>../pat-service-information</module>
 		<module>../pat-facade-video</module>
 		<module>../pat-service-video</module>
+		<module>../pat-facade-workflow</module>
+		<module>../pat-service-workflow</module>
 	</modules>
 </project>
