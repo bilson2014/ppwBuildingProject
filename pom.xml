@@ -35,7 +35,7 @@
 		<pat-facade-employee.version>1.0-SNAPSHOT</pat-facade-employee.version>
 		<pat-facade-right.version>1.0-SNAPSHOT</pat-facade-right.version>
 		<pat-facade-information.version>1.0-SNAPSHOT</pat-facade-information.version>
-		<pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version>
+		<!-- <pat-facade-video.version>1.0-SNAPSHOT</pat-facade-video.version> -->
 		<pat-facade-workflow.version>1.0-SNAPSHOT</pat-facade-workflow.version>
 
 		<!-- service -->
@@ -48,7 +48,7 @@
 		<pat-service-employee.version>1.0-SNAPSHOT</pat-service-employee.version>
 		<pat-service-right.version>1.0-SNAPSHOT</pat-service-right.version>
 		<pat-service-information.version>1.0-SNAPSHOT</pat-service-information.version>
-		<pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version>
+		<!-- <pat-service-video.version>1.0-SNAPSHOT</pat-service-video.version> -->
 		<pat-service-workflow.version>1.0-SNAPSHOT</pat-service-workflow.version>
 
 	</properties>
@@ -609,8 +609,8 @@
 		<module>../pat-service-employee</module>
 		<module>../pat-facade-information</module>
 		<module>../pat-service-information</module>
-		<module>../pat-facade-video</module>
-		<module>../pat-service-video</module>
+		<!-- <module>../pat-facade-video</module> -->
+		<!-- <module>../pat-service-video</module> -->
 		<module>../pat-facade-workflow</module>
 		<module>../pat-service-workflow</module>
 	</modules>
